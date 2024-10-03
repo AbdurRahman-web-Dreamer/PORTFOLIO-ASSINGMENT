@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-
+ scroll-behavior: smooth;
 }
 
 body{
@@ -102,6 +102,8 @@ header{
 main{
 
 }
+
+/* about section start  */
 .About-me{
   background-color: rgb(17, 24, 38);
 }
@@ -109,7 +111,7 @@ main{
    display: flex;
    flex-direction: column;
    gap: 1rem;
-   height: 100vh;
+   min-height: 100vh;
 }
 .about-text{
   padding: 10px;
@@ -181,6 +183,69 @@ main{
 .about-img{
  width: 100%;
 }
+/* about section end  */
+
+/* resume section start  */
+.resume{
+  background-color: #14335c;
+}
+.resume-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  gap: 2.5rem;
+
+
+  
+}
+.resume-img img{
+  width: 100%;
+}
+.resume-img{
+  max-width: 600px;
+  
+}
+.education-part,.experience-part{
+   max-width: 500px;
+   min-height: 60vh;
+  margin-top: 3.8rem;
+  margin-bottom: 3.8rem;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.resume-section-title{
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 900;
+  padding-top: 2rem;
+  color:#ffbf76;
+}
+.resume-title{
+   font-size: 2rem;
+   font-weight: 800;
+   padding-bottom: 2.6rem;
+   color: #67e8ff;
+}
+.resume-name{
+   font-size: 1.2rem;
+   font-weight: 900;
+   margin: 1.1rem 0;
+   line-height: 2.5rem;
+   color: rgb(245, 250, 255);
+}
+hr{
+  margin-top: 3rem;
+}
+.resume-description{
+  font-size: .975rem;
+  line-height: 1.7rem;
+  font-weight: 600;
+  color: #eecc9a;
+  
+}
+/* resume section end */
 /* main section end */
 /* responsive styles  */
 @media screen and (min-width:577px){
@@ -196,6 +261,7 @@ main{
    .about-me-description{
     font-size: 1rem;
    }
+ 
 }
  
 @media screen and (min-width:992px) {
@@ -208,7 +274,7 @@ main{
      height: 10vh;
    }
 
-   .about-container{
+   .about-container,.resume-container{
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
