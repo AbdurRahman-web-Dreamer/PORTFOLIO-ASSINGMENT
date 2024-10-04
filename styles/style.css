@@ -249,12 +249,20 @@ hr{
 
 
 /* skill section start  */
+.skill{
+  background: linear-gradient(to left, #01192c 0%, #11248b 100%);
+}
 .skill-container{
-  min-height: 100vh;
- background-color: black;
+  min-height: 60vh;
+
 }
 .skill-title{
   text-align: center;
+  color: #a0ff60;
+  font-size: 2.5rem;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  letter-spacing: 6px;
 }
 .skill-content-container{
   display: flex;
@@ -265,7 +273,7 @@ hr{
   display: flex;
   align-items: center;
   margin-top: 1.5rem;
-  gap: .5rem;
+  gap: 1.5rem;
   padding: 10px;
 }
 .skill-content img{
@@ -282,12 +290,13 @@ hr{
   display: flex;
   justify-content: space-between;
   font-size: 1.1rem;
+  padding-bottom: .5rem;
 }
 .percentage{
-  color: #CF4DC4;
+  color: #12f5c4;
 }
 .skill-name{
-  color: #f0ff67;
+  color: #e7cf8e;
 }
 progress{
   width: 100%;
@@ -295,7 +304,7 @@ progress{
   border-radius: 0.5rem;
 }
 progress::-webkit-progress-value{
-  background-color: #49c1e6;
+  background-color: #338ff8;
   border-radius: 1rem;
   
 }
@@ -303,8 +312,13 @@ progress::-webkit-progress-bar{
    background-color: white;
    border-radius: 1rem;
 }
+
 /* skill section end  */
+
+
 /* main section end */
+
+
 /* responsive styles  */
 @media screen and (min-width:577px){
   .nav-link{
@@ -319,9 +333,19 @@ progress::-webkit-progress-bar{
    .about-me-description{
     font-size: 1rem;
    }
- 
+   .skill-content-bar{
+    width: 60%;
+    
+   }
+   progress{
+    width: 100%;
+   }
+   .skill-content{
+    justify-content: center;
+   }
 }
- 
+
+
 @media screen and (min-width:992px) {
   .container{
     padding: 0 1rem;
