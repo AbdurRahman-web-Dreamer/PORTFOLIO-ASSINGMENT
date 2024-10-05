@@ -466,6 +466,7 @@ progress::-webkit-progress-bar{
 /* contact section start  */
 .contact{
   background:linear-gradient(to left,rgb(15, 65, 230),rgb(16, 20, 44));
+  padding: 70px 0;
 }
 .contact-title{
   text-align: center;
@@ -558,6 +559,36 @@ textarea::placeholder{
 }
 /* contact section end */
 
+
+/* footer section start  */
+footer{
+  background-color: black;
+ 
+}
+.footer-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height:70px ;
+}
+.footer-content-1{
+  display: flex;
+  gap: 1.5rem;
+  
+}
+.footer-content-1 a >i{
+   font-size: 1.5rem;
+   color: white;
+}
+.footer-content-1 a{
+   text-decoration:none ;
+   display: inline-block;
+   margin: 14px 0;
+}
+.footer-content p{
+  color: white;
+}
+/* footer section end */
 /* responsive styles  */
 @media screen and (min-width:577px){
   .nav-link{
@@ -599,7 +630,7 @@ textarea::placeholder{
    }
 
    .about-container,.resume-container,
-   .skill-content-container,.contact-container{
+   .skill-content-container,.contact-container,.footer-container{
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
