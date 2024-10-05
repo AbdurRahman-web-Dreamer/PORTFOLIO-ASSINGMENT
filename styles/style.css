@@ -536,12 +536,13 @@ textarea::placeholder{
 .contact-info{
   font-size: 3rem;
   color: #ffbf76;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 
 }
 .contact-des{
   max-width: 40%;
   color: white;
+  margin-bottom: 40px;
 }
 .contact-way-type{
     font-size: 1.2rem;
