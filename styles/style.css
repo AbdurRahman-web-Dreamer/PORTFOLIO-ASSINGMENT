@@ -481,7 +481,7 @@ progress::-webkit-progress-bar{
     margin-top: 6rem;
 }
 .contact-form{
-  padding: 20px;
+  padding: 15px;
   background-color: #132b47;
   border-radius: 12px;
 }
@@ -532,15 +532,17 @@ textarea::placeholder{
 
 .contact-content{
  flex: 1;
+ padding: 20PX;
 }
 .contact-info{
-  font-size: 3rem;
+  font-size: 2rem;
   color: #ffbf76;
   margin-bottom: 2rem;
 
 }
+
 .contact-des{
-  max-width: 40%;
+  max-width: 70%;
   color: white;
   margin-bottom: 40px;
 }
@@ -617,6 +619,15 @@ footer{
    .certificate-content{
     width: 400px;
    }
+   .contact-info{
+    font-size: 3rem;
+    
+  
+  }
+  
+  .contact-des{
+    max-width: 60%;
+  }
 }
 
 
@@ -667,5 +678,7 @@ footer{
    .about-me-description{
     margin: 0;
    }
-  
+   .contact-des{
+    max-width: 40%;
+  }
 }
