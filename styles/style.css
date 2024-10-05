@@ -531,7 +531,7 @@ textarea::placeholder{
 }
 
 .contact-content{
- flex: 1;
+ max-width: 400px;
  padding: 20PX;
 }
 .contact-info{
@@ -620,17 +620,15 @@ footer{
     width: 400px;
    }
    .contact-info{
-    font-size: 3rem;
+    font-size: 2.4rem;
     
   
   }
   
   .contact-des{
-    max-width: 60%;
+    max-width: 80%;
   }
 }
-
-
 @media screen and (min-width:992px) {
   .container{
     padding: 0 1rem;
@@ -678,7 +676,5 @@ footer{
    .about-me-description{
     margin: 0;
    }
-   .contact-des{
-    max-width: 40%;
-  }
+
 }
