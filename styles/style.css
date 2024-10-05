@@ -394,6 +394,72 @@ progress::-webkit-progress-bar{
 /* certificate section end */
 
 
+/* project section start  */
+.project{
+  background:linear-gradient(to right,rgb(22, 84, 136),rgb(77, 12, 163));
+  padding: 70px 0;
+}
+.project-container{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   margin-top: 1.5rem;
+}
+.project-title{
+  text-align: center;
+  font-size: 2.2rem;
+  font-weight: 900;
+  letter-spacing: 6px;
+  padding-top: 5rem;
+  padding-bottom: 2rem;
+  color: rgb(233, 91, 40);
+}
+.project-content{
+  max-width: 350px;
+  height: 370px;
+  border-radius: 12px;
+  margin-top: 1.5rem;
+  background-color: #070720;
+  transition: all .6s;
+  
+}
+.project-content:hover{
+  background-color: #0e85ca;
+}
+.project-content img{
+  width: 100%;
+  min-height: 55%;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+.project-about{
+  padding: 14px;
+}
+.project-name{
+  font-size: 1.4rem;
+  font-weight: 700;
+  color:white;
+}
+.project-des{
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin: .9rem 0;
+  color: #d5f716;
+}
+.live-link{
+  text-decoration: underline;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: rgb(255, 179, 66);
+  
+  
+}
+.live-link > i{
+  margin-left: 6px;
+  color: white;
+}
+/* project section end */
+
 /* main section end */
 
 
@@ -450,6 +516,11 @@ progress::-webkit-progress-bar{
     justify-content: space-around;
     flex-direction: row;
     gap: 1rem;
+   }
+   .project-container{
+    flex-direction: row;
+    justify-content: center;
+    gap: 2.5rem;
    }
    .certificate-content{
     margin-top: 38px;
