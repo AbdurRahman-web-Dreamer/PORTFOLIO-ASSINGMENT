@@ -425,6 +425,7 @@ progress::-webkit-progress-bar{
 }
 .project-content:hover{
   background-color: #0e85ca;
+  transform: translateY(-9px);
 }
 .project-content img{
   width: 100%;
@@ -443,7 +444,7 @@ progress::-webkit-progress-bar{
 .project-des{
   font-size: 1.2rem;
   font-weight: 500;
-  margin: .9rem 0;
+  margin: 1.5rem 0;
   color: #d5f716;
 }
 .live-link{
@@ -451,7 +452,7 @@ progress::-webkit-progress-bar{
   font-size: 1.1rem;
   font-weight: 600;
   color: rgb(255, 179, 66);
-  
+ 
   
 }
 .live-link > i{
@@ -462,6 +463,100 @@ progress::-webkit-progress-bar{
 
 /* main section end */
 
+/* contact section start  */
+.contact{
+  background:linear-gradient(to left,rgb(15, 65, 230),rgb(16, 20, 44));
+}
+.contact-title{
+  text-align: center;
+  font-size: 2.5rem;
+  color: #cdf716;
+  padding-top: 2rem;
+}
+.contact-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 6rem;
+}
+.contact-form{
+  padding: 20px;
+  background-color: #132b47;
+  border-radius: 12px;
+}
+.contact-form-title{
+  color: rgb(253, 203, 129);
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 3rem;
+  font-weight: 800;
+}
+.input-field{
+  display: block;
+  min-width: 341px;
+  border: none;
+  border-bottom: 2px solid white;
+  height: 2.5rem;
+  outline: none;
+  margin-bottom: 1.7rem;
+  padding-left: 10px;
+  background-color: transparent;
+  color: white;
+}
+.input-field::placeholder{
+   color: rgb(187, 255, 0);
+   font-size: .885rem;
+}
+.submit{
+  display: block;
+  padding: 12px 32px;
+  border: none;
+  border-radius: 6px;
+  background-color: #27a8f3;
+  color: white;
+  margin-top: 10px;
+}
+textarea{
+  resize: none;
+  padding-left:10px ;
+  padding-top: 7px;
+  border-radius: 6px;
+  background-color: transparent;
+  color: white;
+}
+textarea::placeholder{
+  color: rgb(179, 255, 0);
+  font-size: .965rem;
+}
+
+.contact-content{
+ flex: 1;
+}
+.contact-info{
+  font-size: 3rem;
+  color: #ffbf76;
+  margin-bottom: 3rem;
+
+}
+.contact-des{
+  max-width: 40%;
+  color: white;
+}
+.contact-way-type{
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-top: 1rem;
+    color: white;
+}
+.contact-way-type>i{
+  margin-right: 6px;
+  color: #f365c8;
+}
+.ways{
+   font-size: .9rem;
+   font-weight: 900;
+}
+/* contact section end */
 
 /* responsive styles  */
 @media screen and (min-width:577px){
@@ -504,7 +599,7 @@ progress::-webkit-progress-bar{
    }
 
    .about-container,.resume-container,
-   .skill-content-container{
+   .skill-content-container,.contact-container{
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
