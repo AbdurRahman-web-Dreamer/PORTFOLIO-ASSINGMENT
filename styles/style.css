@@ -99,9 +99,6 @@ header{
 /* header section end  */
 
 /* main section start  */
-main{
-
-}
 
 /* about section start  */
 .About-me{
@@ -251,10 +248,11 @@ hr{
 /* skill section start  */
 .skill{
   background: linear-gradient(to left, #01192c 0%, #11248b 100%);
+  padding:5rem 0;
 }
 .skill-container{
   min-height: 60vh;
-
+  
 }
 .skill-title{
   text-align: center;
@@ -293,7 +291,7 @@ hr{
   padding-bottom: .5rem;
 }
 .percentage{
-  color: #12f5c4;
+  color: #12f5ea;
 }
 .skill-name{
   color: #e7cf8e;
@@ -304,7 +302,7 @@ progress{
   border-radius: 0.5rem;
 }
 progress::-webkit-progress-value{
-  background-color: #338ff8;
+  background-color: #27a8f3;
   border-radius: 1rem;
   
 }
@@ -314,6 +312,86 @@ progress::-webkit-progress-bar{
 }
 
 /* skill section end  */
+
+/* certificate section start  */
+.certificate{
+  background: linear-gradient(to left, #193592 0%, #0e76b3 100%);
+  padding: 4rem 0;
+}
+.certificate-title{
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 3.5rem;
+  padding-bottom: 2rem;
+  letter-spacing: 6px;
+  background: linear-gradient(to left, #cdf716 0%, #ff5411 100%);
+    -webkit-background-clip: text; 
+    background-clip: text; 
+    color: transparent; 
+}
+.certificate-container{
+    display: flex;
+    flex-direction: column;
+   align-items: center;
+}
+.certificate-content{
+   display: flex;
+   align-items: center;
+   gap: 1rem;
+   background-color: #07163f;
+   width: 370px;
+   min-height: 100px;
+   height: 120px;
+   margin-top: 18px;
+   border-radius: 18px;
+   border: none;
+   transition: all .6s;
+}
+.certificate-content:hover{
+   transform: translateY(-6px);
+}
+.certificate-content:hover .certificate-img{
+   background-color: #8934bb;
+}
+.certificate-img{
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+   min-height: 100px;
+   background-color: #8ee7a4;
+   padding: 1.74rem 1.5rem;
+   transition: all .3s;
+}
+
+.certificate-img img{
+ 
+  width: 60px;
+  height: 60px;
+  background-color: white;
+  border-radius: 9px;
+}
+.certificate-name{
+  font-size: .98rem;
+   font-weight: 900;
+   color: rgb(44, 145, 228);
+}
+.institution-name{
+   font-size: .87rem;
+   color: rgb(176, 248, 81);
+   font-weight: 500;
+   padding: .5rem 0;
+}
+.completed-date{
+    font-size: .79rem;
+    color: rgb(233, 117, 233);
+}
+.view-btn{
+  margin: auto auto;
+  margin-top: 4rem;
+  display: block;
+  padding: 1rem 1.5rem;
+}
+/* certificate section end */
 
 
 /* main section end */
@@ -343,6 +421,9 @@ progress::-webkit-progress-bar{
    .skill-content{
     justify-content: center;
    }
+   .certificate-content{
+    width: 400px;
+   }
 }
 
 
@@ -356,13 +437,24 @@ progress::-webkit-progress-bar{
      height: 10vh;
    }
 
-   .about-container,.resume-container,.skill-content-container{
+   .about-container,.resume-container,
+   .skill-content-container{
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
    }
    .skill-content-container{
     gap: 1.7rem;
+   }
+   .certificate-container{
+    justify-content: space-around;
+    flex-direction: row;
+    gap: 1rem;
+   }
+   .certificate-content{
+    margin-top: 38px;
+    width: 550px;
+    
    }
    .skill-left-content,.skill-content-right{
     width: 50%;
@@ -377,4 +469,5 @@ progress::-webkit-progress-bar{
    .about-me-description{
     margin: 0;
    }
+  
 }
