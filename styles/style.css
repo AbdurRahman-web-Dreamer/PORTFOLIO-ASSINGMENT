@@ -437,12 +437,12 @@ progress::-webkit-progress-bar{
   padding: 14px;
 }
 .project-name{
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   font-weight: 700;
   color:white;
 }
 .project-des{
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 500;
   margin: 1.5rem 0;
   color: #d5f716;
